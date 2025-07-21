@@ -1,0 +1,190 @@
+/* style.css v1.0.1 basic */
+/* < ======================================================
+< Root Variables
+< ====================================================== */
+
+:root {
+
+  /* > ====================================================
+  > Section I: Colour Palettes
+  > ==================================================== */
+
+  --colour-neutral-50: #fafafa;
+  --colour-neutral-100: #f5f5f5;
+  --colour-neutral-200: #e5e5e5;
+  --colour-neutral-300: #d4d4d4;
+  --colour-neutral-400: #a3a3a3;
+  --colour-neutral-500: #737373;
+  --colour-neutral-600: #525252;
+  --colour-neutral-700: #404040;
+  --colour-neutral-800: #262626;
+  --colour-neutral-900: #171717;
+  --colour-rose-500: #f43f5e;
+  --colour-pink-500: #ec4899;
+  --colour-purple-500: #a855f7;
+  --colour-violet-500: #8b5cf6;
+  --colour-indigo-500: #6366f1;
+  --colour-blue-500: #3b82f6;
+  --colour-cyan-500: #06b6d4;
+  --colour-teal-500: #14b8a6;
+  --colour-emerald-500: #10b981;
+  --colour-green-500: #22c55e;
+  --colour-lime-500: #84cc16;
+  --colour-yellow-500: #eab308;
+  --colour-amber-500: #f59e0b;
+  --colour-orange-500: #f97316;
+  --colour-red-500: #ef4444;
+  --colour-slate-500: #64748b;
+  --colour-custom-01: rgb(84, 93, 103);
+
+  /* > ====================================================
+  > Section II: Font Families
+  > ==================================================== */
+
+  --font-family-mono: 'Courier New', Courier, monospace;
+  --font-family-sans: Inter, 'Segoe UI', sans-serif;
+  --font-family-roboto: Roboto, Arial, sans-serif;
+  --font-family-montserrat: Montserrat, 'Trebuchet MS', sans-serif;
+  --font-family-serif: Georgia, 'Times New Roman', serif;
+  --font-family-cursive: 'Comic Sans MS', cursive, sans-serif;
+
+  /* > ====================================================
+  > Section III: Theme and Font Variables
+  > ==================================================== */
+
+  --theme-text: var(--colour-neutral-300);
+  --theme-text-soft: var(--colour-neutral-400);
+  --theme-text-rich: var(--colour-neutral-200);
+  --theme-accent: var(--colour-violet-500);
+  --theme-accent-soft: var(--colour-purple-500);
+  --theme-accent-rich: var(--colour-indigo-500);
+  --theme-foreground: var(--colour-teal-500);
+  --theme-foreground-soft: var(--colour-emerald-500);
+  --theme-foreground-rich: var(--colour-green-500);
+  --theme-background: var(--colour-neutral-800);
+  --theme-background-soft: var(--colour-neutral-700);
+  --theme-background-rich: var(--colour-neutral-900);
+  --theme-shadow: inset 0 0 0 2px var(--colour-indigo-500);
+  --theme-scrollbar: var(--colour-custom-01) transparent;
+
+  --font-size: 16px;
+  --font-weight: 400;
+  --font-family: var(--font-family-mono);
+
+  /* ~ ====================================================
+  ~ Section IV: Project Variables
+  ~ ==================================================== */
+
+}
+
+/* < ======================================================
+< HTML and Body Styling
+< ====================================================== */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  scrollbar-color: var(--theme-scrollbar);
+}
+
+/* < ======================================================
+< Wildcard Styling
+< ====================================================== */
+
+* {
+  box-sizing: border-box;
+  /* box-shadow: var(--theme-shadow); */
+}
+
+/* < ======================================================
+< Utility Classes
+< ====================================================== */
+
+.hidden {
+  display: none !important;
+}
+
+/* < ======================================================
+< Page Element Styling
+< ====================================================== */
+
+#page {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  background-color: transparent;
+}
+
+/* < ======================================================
+< Main Element Styling
+< ====================================================== */
+
+#main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 128px;
+  gap: 16px;
+  overflow: auto;
+}
+
+/* ~ ======================================================
+~ Project Styling
+~ ====================================================== */
+
+#button {
+  padding: 10px 20px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#button:hover {
+  background: #005bb5;
+}
+
+#dropdown {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#dropdown:focus {
+  outline: none;
+  border: none;
+}
+
+#dropdown option {
+  background: black;
+  color: white;
+  padding: 8px;
+}
