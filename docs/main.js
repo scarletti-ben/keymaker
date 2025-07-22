@@ -56,7 +56,7 @@ function toast(message) {
 // ~ ======================================================
 
 /**
- * Entry point for the application (IIFE)
+ * Entry point function for the application (IIFE)
  * 
  * @async
  * @returns {void}
