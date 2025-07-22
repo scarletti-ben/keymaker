@@ -1,7 +1,7 @@
 # keymaker
 This project uses the `Web Crypto API` built into `JavaScript` to generate cryptographic keys, convert the keys to `Base-64` encoded strings, and store them as a `.env` file on the user's system. All at the click of a button. Currently the focus is on public / private key pairs, rather than symmetric keys.
 
-You can access the site [here](https://scarletti-ben.github.io/keymaker), or clone the repository and run it via your own local server.
+You can access the site [here](https://scarletti-ben.github.io/keymaker), or clone the repository and run it via your own local server
 
 > [!WARNING]
 > The generation of the keys should be secure but make sure that you are careful with the contents of the `.env` file, never expose the contents publicly under any circumstances
