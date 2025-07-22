@@ -24,13 +24,13 @@ In simple terms, a system of `asymmetric keys` and one with `symmetric keys` dif
 ---
 title: "keymaker"
 date: "2025-07-21"
-# last_modified_at: "2025-07-21"
+# last_modified_at: ""
 # description: ""
 categories: [
   miscellaneous
 ]
 tags: [
-  coding, dev, webdev, javascript, html, encryption, cryptography, private key, public key, key pairs, base64, .env, environment variables
+  coding, dev, webdev, javascript, html, encryption, signing, decryption, cipher, cryptography, private key, public key, key pairs, key-pairs, symmetric keys, asymmetric keys, cryptographic algorithms, web crypto api, base64, .env, environment variables
 ]
 ---
 ```
