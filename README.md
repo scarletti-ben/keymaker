@@ -7,7 +7,7 @@ You can access the site [here](https://scarletti-ben.github.io/keymaker), or clo
 > The generation of the keys should be secure but make sure that you are careful with the contents of the `.env` file, never expose the contents publicly under any circumstances
 
 ## Web Crypto API
-The `Web Crypto API` uses `crypto.subtle.generateKey()`, with a set of options, to create a public / private key-pair. It requires that the browser is in a secure environment eg. `HTTPS`
+The `Web Crypto API` uses `crypto.subtle.generateKey()`, with a set of options, to create keys. Or to create a public / private key-pair. It requires that the browser is in a secure environment eg. `HTTPS`
 
 ## Asymmetric Keys
 I am not going to go too deeply into the concept of `asymmetric keys` as I can't pretend to understand it too deeply, it is detailed quite heavily across the internet and can be found on the `Wikipedia` page for [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography). 
@@ -18,6 +18,15 @@ In simple terms, a system of `asymmetric keys` and one with `symmetric keys` dif
 
 > [!NOTE]
 > Whilst symmetric keys might sound like a relic of the past, they still find many uses today. In fact one example use of asymmetric keys is "key-exchange" (eg. Diffie-Hellman (DH)) which allows two parties to establish a shared symmetric key
+
+## Current Algorithms
+The current algorithms used by `crypto.subtle.generateKey()` for this project are in the list below
+- `RSA-OAEP`
+- `X25519`
+- `Ed25519`
+
+> [!NOTE]
+> The algorithms above are not an exhaustive list of the possible algorithms that can be used for key generation by `crypto.subtle.generateKey()`. Additionally, no function has currently been added to the project for `symmetric` key generation.
 
 # Project Metadata
 ```yaml
